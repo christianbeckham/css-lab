@@ -1,23 +1,120 @@
+:root {
+	--color-one: #006666;
+	--color-two: #003366;
+	--color-three: #000066;
+	--color-four: #660033;
+	--color-five: #663300;
+	--white-font: #ffffff;
+}
 
 /* This will apply all included styles to the header element */
-header{
-    font-size: 70px;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+header {
+	font-size: 70px;
+	font-weight: 700;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
 }
 
 /* This will apply all included styles to any element which uses the "logo" class*/
 .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -75px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -75px;
 }
 
 /* This will apply any included styles to the body element */
-body{
-
+body {
+	font-family: "Courier New", monospace;
+	background-color: var(--color-one);
 }
 
 /* Create your own classes below! */
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.nav-link {
+	display: inline-flex;
+	color: #fff;
+	padding: 1em 1.5em;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	background-color: #222;
+}
+
+.text-box {
+	width: 400px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.text-box-color-1 {
+	background-color: var(--color-one);
+	color: var(--white-font);
+}
+
+.text-box-color-2 {
+	background-color: var(--color-two);
+	color: var(--white-font);
+}
+
+.text-box-color-3 {
+	background-color: var(--color-three);
+	color: var(--white-font);
+}
+
+.box-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.box-container-stacked {
+	display: flex;
+	flex-direction: column;
+}
+
+.box-stretch {
+	align-self: stretch;
+}
+
+.large-div-one {
+	background-color: var(--color-four);
+	height: 100vh;
+}
+
+.large-div-two {
+	background-color: var(--color-five);
+	height: 100vh;
+}
+
+.repeat-img {
+	background-image: url("../images/coffee.jpg");
+	min-height: 100vh;
+	background-repeat: repeat-y space;
+}
+
+.solo-img {
+	background-image: url("../images/coffee.jpg");
+	background-repeat: no-repeat;
+	height: 450px;
+}
+
+.large-img {
+	background-image: url("../images/coffee.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
